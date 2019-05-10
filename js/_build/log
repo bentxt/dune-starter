@@ -1,8 +1,0 @@
-# dune build hello.bc.js
-# OCAMLPARAM: unset
-$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/q_/f2bdh7493kz7m8r5p81h15kh0000gn/T/dunebc7a95.output 2> /dev/null
-$ /Users/bkb/.opam/4.06.1/bin/ocamlc.opt -config > /var/folders/q_/f2bdh7493kz7m8r5p81h15kh0000gn/T/dune792293.output
-$ (cd _build/default && /Users/bkb/.opam/4.06.1/bin/ocamldep.opt -modules -impl hello.ml) > _build/default/.hello.eobjs/hello.ml.d
-$ (cd _build/default && /Users/bkb/.opam/4.06.1/bin/ocamlc.opt -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I .hello.eobjs/byte -no-alias-deps -opaque -o .hello.eobjs/byte/hello.cmo -c -impl hello.ml)
-$ (cd _build/default && /Users/bkb/.opam/4.06.1/bin/js_of_ocaml --pretty --source-map-inline -o .hello.eobjs/byte/hello.cmo.js --no-runtime /Users/bkb/.opam/4.06.1/lib/js_of_ocaml-compiler/runtime.js .hello.eobjs/byte/hello.cmo)
-$ (cd _build/default && /Users/bkb/.opam/4.06.1/bin/jsoo_link -o hello.bc.js hello.bc.runtime.js --source-map-inline .js/stdlib/stdlib.cma.js .hello.eobjs/byte/hello.cmo.js)

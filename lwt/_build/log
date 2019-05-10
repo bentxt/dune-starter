@@ -1,4 +1,0 @@
-# dune build hello_lwt.exe
-# OCAMLPARAM: unset
-$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/q_/f2bdh7493kz7m8r5p81h15kh0000gn/T/dunebcd157.output 2> /dev/null
-$ /Users/bkb/.opam/4.06.1/bin/ocamlc.opt -config > /var/folders/q_/f2bdh7493kz7m8r5p81h15kh0000gn/T/dune86ad29.output
